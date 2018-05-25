@@ -13,6 +13,7 @@
         <title>List employees Page</title>
     </head>
     <body>
+        
         <h1>List employees</h1>
         <table cellspacing="1" cellpadding="10" align="center" border="1" >
             <thead>
@@ -54,5 +55,8 @@
             </c:forEach>
         </tbody>
     </table>
+        
+        
+        
 </body>
 </html>

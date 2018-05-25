@@ -71,6 +71,13 @@ public class AllEmployeesController extends HttpServlet {
             System.out.println("Region name: " + dtoPersonal.getRegion_name());
 
         }
+        
+        String exportToExcel = request.getParameter("exportToExcel");
+        if (exportToExcel != null && exportToExcel.equalsIgnoreCase("YES")) {
+            response.setContentType("application/vnd.ms-excel");
+            response.setHeader("Content-Disposition", "inline; filename="
+                    + "excel.xls");
+        }
 
     }
 

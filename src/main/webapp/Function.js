@@ -34,6 +34,3 @@ function country(){
 function region(){
     var region=document.getElementById('region_name').checked;
 }
-
-
-
