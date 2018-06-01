@@ -46,15 +46,48 @@ public class AllEmployeesController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         String name = request.getParameter("first_name");
+        System.out.println("name " + name);
+        RequestDispatcher rn = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("name", name);
+        rn.forward(request, response);
+        
         String surname = request.getParameter("last_name");
+        System.out.println("surname " + surname);
+        RequestDispatcher rs = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("surname", surname);
+        rn.forward(request, response);
+        
         String department = request.getParameter("department_name");
+        System.out.println("department " + department);
+        RequestDispatcher rde = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("department", department);
+        rn.forward(request, response);
+        
         String city = request.getParameter("city");
+        System.out.println("city " + city);
+        RequestDispatcher rc = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("city", city);
+        rn.forward(request, response);
+        
         String state = request.getParameter("state_province");
+        System.out.println("state " + state);
+        RequestDispatcher rst = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("state", state);
+        rn.forward(request, response);
+        
         String country = request.getParameter("country_name");
+        System.out.println("country " + country);
+        RequestDispatcher rco = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("country", country);
+        rn.forward(request, response);
+        
         String region = request.getParameter("region_name");
-       
+        System.out.println("region " + region);
+        RequestDispatcher re = request.getRequestDispatcher("jsp/listEmployees.jsp");
+        request.getSession().setAttribute("region", region);
+        rn.forward(request, response);
+        
         employeesService = new AllEmployeesService();
-//        listPersonal = employeesService.listAllEmployees(name, surname, department, city, state, country, region, em);
         listPersonal = employeesService.listAllEmployees(em);
 
         RequestDispatcher rd = request.getRequestDispatcher("jsp/listEmployees.jsp");   
@@ -62,17 +95,51 @@ public class AllEmployeesController extends HttpServlet {
         rd.forward(request, response);
         
         for (DtoPersonal dtoPersonal : listPersonal) {
+            if(name==null){
+                 System.out.println("");
+            } else if (name.equals("check")){
             System.out.println("First name: " + dtoPersonal.getFirst_name());
+            }
+            
+            if(surname==null){
+                 System.out.println("");
+            } else if (surname.equals("check")){
             System.out.println("Last name: " + dtoPersonal.getLast_name());
+            }
+            
+            if(department==null){
+                System.out.println("");
+            } else if (surname.equals("check")){
             System.out.println("Department_name: " + dtoPersonal.getDepartment_name());
+            } 
+            
+            if(city==null){
+                 System.out.println("");
+            } else if (city.equals("check")){
             System.out.println("City: " + dtoPersonal.getCity());
+            }
+            
+            if(state==null){
+                 System.out.println("");
+            } else {
             System.out.println("State province: " + dtoPersonal.getState_province());
+            }
+            
+            if(country==null){
+                 System.out.println("");
+            } else if (country.equals("check")) {
             System.out.println("Country name: " + dtoPersonal.getCountry_name());
+            }
+            
+            if(region==null){
+                 System.out.println("");
+            } else if (region.equals("check")){
             System.out.println("Region name: " + dtoPersonal.getRegion_name());
+            }
 
         }
-
     }
+
 
 // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

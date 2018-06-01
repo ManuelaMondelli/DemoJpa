@@ -29,9 +29,10 @@
             <tbody>
             <c:forEach var="emp" items="${listPersonal}" varStatus="index">
                 <tr>
-                    
+                <c:if var="name" value="check">          
                 <c:set var="firstName" scope="session" value="${first_name}"/>
                 <td><c:out value="${emp.first_name}"></c:out></td>
+                </c:if>
 
                 <c:set var="lastName" scope="session" value="${last_name}"/>
                 <td><c:out value="${emp.last_name}"></c:out></td>

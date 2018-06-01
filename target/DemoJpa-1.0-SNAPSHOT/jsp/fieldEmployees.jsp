@@ -17,19 +17,19 @@
 
             <p>Choose a field</p>
 
-            <input onclick="name()" type="checkbox" id="first_name" name="first_name" value="first_name" checked=""/>First Name
+            <input type="checkbox" id="first_name" name="first_name" value="check"/>First Name
             <br>
-            <input onclick="surname()" type="checkbox" id="last_name" name="last_name" value="last_name" checked=""/>Last Name
+            <input type="checkbox" id="last_name" name="last_name" value="check"/>Last Name
             <br>
-            <input onclick="department()" type="checkbox" id="department_name" name="department_name" value="department_name" checked=""/>Department Name
+            <input type="checkbox" id="department_name" name="department_name" value="check"/>Department Name
             <br>
-            <input onclick="city()" type="checkbox" id="city" name="city" value="city" checked=""/>City
+            <input type="checkbox" id="city" name="city" value="check" unchecked>City
             <br>
-            <input onclick="state()" type="checkbox" id="state_province" name="state_province" value="state_province" checked=""/>State Province
+            <input type="checkbox" id="state_province" name="state_province" value="check"/>State Province
             <br>
-            <input onclick="country()" type="checkbox" id="country_name" name="country_name" value="country_name" checked=""/>Country Name
+            <input type="checkbox" id="country_name" name="country_name" value="check"/>Country Name
             <br>
-            <input onclick="region()" type="checkbox" id="region_name" name="region_name" value="region_name" checked=""/>Region Name
+            <input type="checkbox" id="region_name" name="region_name" value="check"/>Region Name
             <br>
             <br>
             <td><input type="submit" name="print" value="Print"/>
