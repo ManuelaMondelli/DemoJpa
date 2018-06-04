@@ -21,8 +21,6 @@ public class AllEmployeesService {
     private List<DtoPersonal> listPersonal;
     
     public List<DtoPersonal> listAllEmployees(EntityManager em){
-//    public List<DtoPersonal> listAllEmployees(String name, String surname, String department, String city, String state, String country, String region, EntityManager em){
-//        listPersonal=daoEmployees.printAll(name, surname, department, city, state, country, region, em);
         listPersonal=daoEmployees.printAll(em);
         return listPersonal;
     }
