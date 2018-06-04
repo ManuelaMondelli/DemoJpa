@@ -30,7 +30,7 @@
                         <td>&nbsp</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="submit" name="login"></td> 
+                        <td colspan="2"><input type="submit" name="login" value='Login'></td> 
                     </tr>
                 </table>
             </fieldset>

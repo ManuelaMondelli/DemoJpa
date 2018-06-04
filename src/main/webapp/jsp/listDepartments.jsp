@@ -11,9 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>List Departments Page</title>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="tableExport.js"></script>
-        <script type="text/javascript" src="jquery.base64.js"></script>
     </head>
     <body>
 
@@ -41,7 +38,9 @@
         </tbody>
     </table>
 
-       <!-- <td><button onClick="$('#listDepartments').tableExport({type:'excel',escape:'false'});">Export to Excel</button> -->
-       <a href="#" onClick="$('#listDepartments').tableExport({type:'excel',escape:'false'});">Export to Excel</a>
+        <form action="Export" method="get">
+        <input type ="submit" name="excel" value="Export in .XLS" />
+        </form>
+
 </body>
 </html>
