@@ -9,7 +9,6 @@ package com.acn.manu.controller;
 import com.acn.manu.dto.DtoPersonal;
 import com.acn.manu.service.AllEmployeesService;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -32,6 +31,7 @@ public class AllEmployeesController extends HttpServlet {
 
     private AllEmployeesService employeesService;
     private List<DtoPersonal> listPersonal;
+    private int count;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -69,6 +69,9 @@ public class AllEmployeesController extends HttpServlet {
 
         employeesService = new AllEmployeesService();
         listPersonal = employeesService.listAllEmployees(em);
+        
+        System.out.println("count " + listPersonal.size());
+        count = listPersonal.size();
 
         RequestDispatcher rd = request.getRequestDispatcher("jsp/listEmployees.jsp");   
         request.getSession().setAttribute("listPersonal", listPersonal);
@@ -79,6 +82,7 @@ public class AllEmployeesController extends HttpServlet {
         request.getSession().setAttribute("state", state);
         request.getSession().setAttribute("country", country);
         request.getSession().setAttribute("region", region);
+        request.getSession().setAttribute("count", count);
         rd.forward(request, response);
 
         for (DtoPersonal dtoPersonal : listPersonal) {
@@ -125,6 +129,7 @@ public class AllEmployeesController extends HttpServlet {
             }
 
         }
+      
     }
 
 

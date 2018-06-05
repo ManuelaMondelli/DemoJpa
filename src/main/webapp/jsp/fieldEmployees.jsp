@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="charset=UTF-8">
         <title>Field Employees Page</title>
     </head>
     <body>

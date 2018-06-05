@@ -28,10 +28,8 @@ public class DaoAllEmployees {
         for (Employees listemployee : listemployees) {
             DtoPersonal dtop = new DtoPersonal();
             
-
             dtop.setFirst_name(listemployee.getFirstName());
         
-            
             dtop.setLast_name(listemployee.getLastName());
             
             if (null != listemployee.getDepartmentId()) {
@@ -59,9 +57,12 @@ public class DaoAllEmployees {
                 }
             }
                 }
-                
+            
             listPersonal.add(dtop);
+            
         }
+        
+      
         return listPersonal;
     }
 

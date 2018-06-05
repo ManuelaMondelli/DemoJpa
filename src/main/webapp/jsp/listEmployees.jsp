@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <%-- 
     Document   : listEmployees
     Created on : Apr 6, 2018, 10:40:28 AM
@@ -28,9 +28,9 @@
                 </tr>
             <thead>
             <tbody>
-                <tr>
-                <c:forEach var="emp" items="${listPersonal}" varStatus="index">
-                    
+                <tr> 
+                <c:forEach var="emp" items="${listPersonal}" varStatus="index" begin="0" end="${count}" step="1">
+
                 <c:if  test="${name != null}">
                 <c:set var="name" scope="session" value="${first_name}"/>
                 <td><c:out value="${emp.first_name}"></c:out></td>
@@ -51,7 +51,7 @@
                 <td><c:out value="${emp.city}"></c:out></td>
                 </c:if>
                 
-                <c:if test="${state != null}"> 
+                <c:if test="${state != null}">  
                 <c:set var="state" scope="session" value="${s}"/>
                 <td><c:out value="${emp.state_province}"></c:out></td>
                 </c:if>
@@ -64,10 +64,10 @@
                 <c:if test="${region != null}">
                 <c:set var="region" scope="session" value="${r}"/>
                 <td><c:out value="${emp.region_name}"></c:out></td>
-                </c:if>
-                <continue>
- 	 </c:forEach>
-           </continue>
+                </c:if> 
+                
+                </c:forEach>
+                </tr>
         </tbody>
     </table>
 </body>

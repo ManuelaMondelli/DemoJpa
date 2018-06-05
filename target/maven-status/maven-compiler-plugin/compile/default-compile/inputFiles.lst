@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Project\DemoJpa\src\main\java\com\acn\manu\model\Jobs.java
 C:\Project\DemoJpa\src\main\java\com\acn\manu\model\Employees.java
 C:\Project\DemoJpa\src\main\java\com\acn\manu\model\Locations.java
@@ -19,25 +18,3 @@ C:\Project\DemoJpa\src\main\java\com\acn\manu\controller\AllDepartments.java
 C:\Project\DemoJpa\src\main\java\com\acn\manu\model\Regions.java
 C:\Project\DemoJpa\src\main\java\com\acn\manu\dto\DtoPersonal.java
 C:\Project\DemoJpa\src\main\java\com\acn\manu\dto\DtoDepartment.java
-=======
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\controller\AllDepartments.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dto\DtoDepartment.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dto\DtoPersonal.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Locations.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Regions.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\service\LoginService.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\controller\AllEmployeesController.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dao\DaoAllEmployees.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dao\DaoLogin.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\LoginPK.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dto\DtoLogin.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Countries.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\service\AllDepartmentsService.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\controller\LoginController.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Jobs.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\service\AllEmployeesService.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Login.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\dao\DaoAllDepartments.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Employees.java
-C:\MyProjects\DemoJpa\src\main\java\com\acn\manu\model\Departments.java
->>>>>>> origin/develop
